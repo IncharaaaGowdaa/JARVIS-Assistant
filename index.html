@@ -2,48 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" context="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impossible Button</title>
-    <style>
-        body {
-            background-color: #222;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        button {
-            padding: 20px;
-            font-size: 20px;
-            background-color: #ff6600;
-            color: white;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            transition: 0.1s;
-        }
-
-        button:hover {
-            background-color: #ff3300;
-        }
-    </style>
+    <title>JARVIS- Virtual Assistant</title>
+    <link rel="shortcut icon" href="blue color.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stylejarvis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <h1>Click the Impossible Button</h1>
-    <p>Can you click it? Try your best!</p>
-
-    <button id="impossible-button">Click me!</button>
-
-    <script>
-        const button = document.getElementById('impossible-button');
-
-        button.addEventListener('mouseover', () => {
-            const randomX = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth));
-            const randomY = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight));
-            button.style.left = randomX + 'px';
-            button.style.top = randomY + 'px';
-        });
-    </script>
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="UI-data visualize project.gif" alt="image">
+            </div>
+            <h1>J A R V I S</h1>
+            <p>I'm a virtual Assistant JARVIS, How may i help you? </p>
+        </div>
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content">Click here to speak</h1>
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>
